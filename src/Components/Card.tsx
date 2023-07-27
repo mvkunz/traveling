@@ -10,7 +10,7 @@ type CityType = {
 function Card({ cityInfo }: CityType) {
   const { city, country, imageUrl, visited } = cityInfo;
   return (
-    <>
+    <div className="all-together">
     <div className="card">
       <span className="city-span">{ city }</span>
       <span className="country-span">{ country }</span>
@@ -19,7 +19,7 @@ function Card({ cityInfo }: CityType) {
       <img src={ imageUrl } alt={ city } />
       <span>{ visited ? <span className="already">Já fui!</span> : <span className="not-yet">Não fui (ainda..)</span>}</span>
     </div>
-    </>
+    </div>
   );
 }
 

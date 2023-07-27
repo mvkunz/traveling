@@ -11,12 +11,21 @@ body {
   justify-content: flex-start;
 }
 
+.all-together {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
-  padding: 10;
+  width: 180px;
+  height: 1px;
+  border: 2px solid red;
+  padding: 1rem;
+
 }
 
 .city-span, .country-span {
@@ -73,8 +82,4 @@ h1 {
   display: flex;
   justify-content: center;
   text-align: center;
-}
-
-.card {
-  padding: 2em;
 }
