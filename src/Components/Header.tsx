@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>TÔ VIAJANDO?</h1>
+      <h1>MINHAS VIAGENS | VIAGENS FUTURAS ✈️</h1>
     </header>
   )
 }
