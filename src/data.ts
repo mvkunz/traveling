@@ -1,20 +1,35 @@
 export const infoParis = {
   city: 'Paris',
-  country: 'França',
+  country: '| França',
   imageUrl: '/src/assets/COUNTRIES/paris.jpeg',
   visited: true,
 };
 
-export const infoCidadeDoCabo = {
-  city: 'Cidade do Cabo',
-  country: 'África do Sul',
-  imageUrl: '/src/assets/cidade-do-cabo.webp',
+export const infoMunich = {
+  city: 'Munich',
+  country: '| Germany',
+  imageUrl: '/src/assets/COUNTRIES/munich.jpeg',
   visited: true,
 };
 
-export const infoAcapulco = {
-  city: 'Acapulco',
-  country: 'México',
-  imageUrl: '/src/assets/acapulco.webp',
+export const infoInnsbruck = {
+  city: 'Innsbruck',
+  country: '| Austria',
+  imageUrl: '/src/assets/COUNTRIES/innsbruck.jpeg',
+  visited: true,
 };
+
+export const infoRome = {
+  city: 'Rome',
+  country: '| Italy',
+  imageUrl: '/src/assets/COUNTRIES/rome.jpeg',
+  visited: true,
+};
+
+export const infoVancouver = {
+  city: 'Vancouver',
+  country: '| Canada',
+  imageUrl: '/src/assets/COUNTRIES/vancouver.jpeg',
+};
+
 

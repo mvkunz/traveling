@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { infoAcapulco, infoCidadeDoCabo, infoParis } from "../data";
+import { infoInnsbruck, infoMunich, infoParis, infoVancouver, infoRome } from "../data";
 
 
 function CardList() {
@@ -9,10 +9,16 @@ function CardList() {
         cityInfo={ infoParis }
       />
       <Card
-        cityInfo={ infoCidadeDoCabo }
+        cityInfo={ infoMunich }
       />
       <Card
-        cityInfo={ infoAcapulco }
+        cityInfo={ infoInnsbruck }
+      />
+            <Card
+        cityInfo={ infoVancouver }
+      />    
+      <Card
+        cityInfo={ infoRome }
       />
     </div>
   )

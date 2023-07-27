@@ -10,12 +10,16 @@ type CityType = {
 function Card({ cityInfo }: CityType) {
   const { city, country, imageUrl, visited } = cityInfo;
   return (
+    <>
     <div className="card">
-      <span>{ city }</span>
-      <span>{ country }</span>
-      <img src={ imageUrl } alt={ city } />
-      <span>{ visited ? 'Já fui!' : 'Não fui (ainda..)'}</span>
+      <span className="city-span">{ city }</span>
+      <span className="country-span">{ country }</span>
     </div>
+    <div className="img-conditional">
+      <img src={ imageUrl } alt={ city } />
+      <span>{ visited ? <span className="already">Já fui!</span> : <span className="not-yet">Não fui (ainda..)</span>}</span>
+    </div>
+    </>
   );
 }
 
