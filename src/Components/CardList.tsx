@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { infoInnsbruck, infoMunich, infoParis, infoVancouver, infoRome } from "../data";
+import { infoInnsbruck, infoMunich, infoParis, infoVancouver, infoRome, infoVaticano, infoBarcelona, infoLisboa, infoCappadocia, infoIstanbul } from "../data";
 
 
 function CardList() {
@@ -14,12 +14,27 @@ function CardList() {
       <Card
         cityInfo={ infoInnsbruck }
       />
-            <Card
-        cityInfo={ infoVancouver }
-      />    
       <Card
         cityInfo={ infoRome }
       />
+      <Card
+        cityInfo={ infoVaticano }
+      />
+      <Card
+        cityInfo={ infoBarcelona }
+      />
+      <Card
+        cityInfo={ infoLisboa }
+      />
+      <Card
+        cityInfo={ infoIstanbul }
+      />
+      <Card
+        cityInfo={ infoCappadocia }
+      />
+      <Card
+        cityInfo={ infoVancouver }
+      />   
     </div>
   )
 }

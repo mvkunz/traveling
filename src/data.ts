@@ -26,6 +26,41 @@ export const infoRome = {
   visited: true,
 };
 
+export const infoVaticano = {
+  city: 'Vaticano',
+  country: '| Vaticano',
+  imageUrl: '/src/assets/COUNTRIES/vaticano.jpeg',
+  visited: true,
+};
+
+export const infoBarcelona = {
+  city: 'Vaticano',
+  country: '| Vaticano',
+  imageUrl: '/src/assets/COUNTRIES/vaticano.jpeg',
+  visited: true,
+};
+
+export const infoLisboa = {
+  city: 'Lisboa',
+  country: '| Portugal',
+  imageUrl: '/src/assets/COUNTRIES/lisboa.jpeg',
+  visited: true,
+};
+
+export const infoIstanbul = {
+  city: 'Istanbul',
+  country: '| Turkey',
+  imageUrl: '/src/assets/COUNTRIES/istanbul.jpeg',
+  visited: true,
+};
+
+export const infoCappadocia = {
+  city: 'Cappadocia',
+  country: '| Turkey',
+  imageUrl: '/src/assets/COUNTRIES/cappadocia.jpeg',
+  visited: true,
+};
+
 export const infoVancouver = {
   city: 'Vancouver',
   country: '| Canada',
