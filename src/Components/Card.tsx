@@ -10,7 +10,7 @@ type CityType = {
 function Card({ cityInfo }: CityType) {
   const { city, country, imageUrl, visited } = cityInfo;
   return (
-    <div>
+    <div className="card">
       <span>{ city }</span>
       <span>{ country }</span>
       <img src={ imageUrl } alt={ city } />

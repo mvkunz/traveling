@@ -1,27 +1,102 @@
-# React + TypeScript + Vite
+# Tô Viajando?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Você vai criar uma página de suas viagens favoritas – tanto os lugares para os quais já viajou como os que sonha em conhecer.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<details>
+  <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
 
-## Expanding the ESLint configuration
+Neste exercício, você vai desenvolver três componentes: `Header`, `Card` e `CardList`, que serão utilizados para renderizar as informações sobre as cidades.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Os componentes deverão ser criados dentro da pasta nomeada `components`.
 
-- Configure the top-level `parserOptions` property like this:
+</details>
+
+<details>
+  <summary><strong>:memo: Habilidades</strong></summary><br />
+
+Neste exercício, vai ser verificada sua capacidade de:
+
+- Criar componentes React reutilizáveis.
+
+- Renderizar as informações recebidas via props, com a tipagem correta.
+
+</details>
+
+# Requisitos
+
+## 1 - Crie o componente `<Header />`
+
+- Este arquivo precisa ser criado na pasta `src/components`.
+
+- Este componente deve ser utilizado no `App` para renderizar uma tag `h1` com o texto 'Tô viajando?'.
+
+**_Aviso_**: Não se esqueça de exportar esse componente.
+
+<details>
+  <summary><strong>O que será verificado</strong></summary><br />
+
+- O componente tem uma tag `h1` com o texto 'Tô viajando?'.
+
+- O componente `<Header />` está sendo renderizado no App corretamente.
+
+</details>
+
+---
+
+## 2 - Crie o componente `<Card />`
+
+- Este arquivo precisa ser criado na pasta `src/components`.
+
+- O `Card` deve conter a prop `cityInfo`. Nela, deve haver as chaves do tipo string `city`, `country` e `imageUrl`, todas elas obrigatórias, e a chave do tipo boolean `visited`, que é opcional.
+
+- O `Card` deve renderizar o nome da cidade e o país em que se localiza.
+  
+- A imagem deve ser renderizada com a prop `city` como alt.
+  
+- Renderize a mensagem "Já Fui!" caso a prop `visited` seja true. Caso contrário, renderize a mensagem "Não Fui."
+
+<br />
+
+<details>
+  <summary><strong>O que será verificado</strong></summary><br />
+
+- O componente renderiza as informações de uma cidade já visitada corretamente.
+
+- Ao não passar a chave "visited" na prop "cityInfo", o componente renderiza a mensagem "Não Fui." ao invés de "Já Fui!".
+
+</details>
+
+---
+
+## 3 - Crie o componente `<CardList />`
+
+- Agora, você deverá renderizar os três Cards para três destinos.
+- Este arquivo já está criado na pasta `src/components`.
+- Este componente deve renderizar três componentes `Card`, cada um deles com a informação das respectivas cidades (um componente `Card` para Rio de Janeiro, um para a Cidade do Cabo e outro para Acapulco) já contidas no arquivo `src/components/CardList.tsx`.
+
+- Renderize esse componente no App.
+
+<details>
+  <summary><strong>O que será verificado</strong></summary><br />
+
+- Os cards de 'Rio de Janeiro', 'Cidade do Cabo' e 'Acapulco' são renderizados corretamente no componente `CardList`.
+
+- O componente `CardList` está sendo renderizado no `App` corretamente.
+
+</details>
+
+---
+
+# Exercício extra (esse não é testado pelo avaliador)
+
+<details>
+  <summary> Estilize a aplicação adicionando classes que vão aprimorar seus componentes, de modo que cada conteúdo listado seja um Card</summary><br />.
+
+- Para adicionar uma classe de estilização a um elemento HTML, utilize o atributo className:
 
 ```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+<div className="card">...</div>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+</details>
